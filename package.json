@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged"
+    "pretty-quick": "pretty-quick"
   },
   "browserslist": {
     "production": [
@@ -52,5 +52,10 @@
   "devDependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "prettier": "2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
