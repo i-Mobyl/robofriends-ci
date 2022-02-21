@@ -32,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty-quick": "pretty-quick",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -47,6 +49,9 @@
     ]
   },
   "devDependencies": {
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5"
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
   }
 }
